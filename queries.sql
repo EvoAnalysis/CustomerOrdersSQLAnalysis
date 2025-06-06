@@ -30,7 +30,7 @@ SELECT
 FROM Orders
 WHERE OrderDate BETWEEN '2024-04-01' AND '2024-04-30';
 
--- Query 5: Average Order Value (formatted as money)
+-- Query 5: Average Order Value
 SELECT 
     '$' || ROUND(AVG(OrderAmount), 2) AS AverageOrderPrice
 FROM Orders;
